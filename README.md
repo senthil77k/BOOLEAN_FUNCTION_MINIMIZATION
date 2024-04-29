@@ -32,19 +32,30 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+~~~
+module experiment2(E,F,A,B,C,D);
+output E,F;
+input A,B,C,D;
+assign E=A||(B&&C)||((!B)&&D);
+assign F=((!B)&&C)||(B&&(!C)&&(!D));
+endmodule
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+~~~
+# Name: senthilkumaran c
+# Register Number:212223220103
 
-Developed by: RegisterNumber:*/
 
+**Truth Table**
 
-**RTL realization**
+![WhatsApp Image 2024-04-04 at 14 56 21_aac75d60](https://github.com/Dharsanrameshkumar/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870430/2b368c66-759e-4aef-9db7-d1b2bf6746bb)
 
-**Output:**
 
 **RTL**
+![WhatsApp Image 2024-04-04 at 14 06 48_dad00aa9](https://github.com/Dharsanrameshkumar/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870430/8fae5a41-dbce-4653-8a93-3ae7fefb7f77)
 
-**Timing Diagram**
+**Output:**
+![WhatsApp Image 2024-04-04 at 14 07 01_0397bcca](https://github.com/Dharsanrameshkumar/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870430/a3cab865-f1eb-406e-8636-40ca430ddc08)
+
 
 **Result:**
 
